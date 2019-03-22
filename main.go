@@ -19,7 +19,7 @@ var (
 
 func init() {
 	help = fmt.Sprintf(help, VERSION)
-	flag.StringVar(&origin, "o", "http://0.0.0.0/", "websocket origin")
+	flag.StringVar(&origin, "o", "http://0.0.0.0", "websocket origin")
 	flag.StringVar(&headers, "H", "", "a comma separated list of http headers")
 	flag.IntVar(&version, "v", websocket.ProtocolVersionHybi13, "websocket version")
 	flag.Parse()
